@@ -434,75 +434,76 @@
             }
         }
     </style>
-</head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#hero" class="logo">🥖 Scone Scorer NZ</a>
-            <ul class="nav-links">
-                <li><a href="#leaderboard-section">Leaderboard</a></li>
-                <li><a href="#blog-section">Blog</a></li>
-                <li><a href="https://instagram.com/yourhandle" target="_blank">Instagram</a></li>
+        <a href="#hero" class="logo">🥖 Scone Scorer NZ</a>
+        <ul class="nav-links">
+            <li><a href="#leaderboard-section">Leaderboard</a></li>
+            <li><a href="#blog-section">Blog</a></li>
+            <li><a href="https://instagram.com/yourhandle" target="_blank">Instagram</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
         <div id="hero" class="hero">
-            <h1>The Ultimate NZ Cheese Scone Quest</h1>
-            <p>Discovering and ranking New Zealand's finest cheese scones with scientific precision</p>
-            <div class="social-links">
-                <a href="https://instagram.com/yourhandle" target="_blank" class="social-btn">📸 Follow on Instagram</a>
-            </div>
-        </div>
-
-        <<div id="leaderboard-section" class="section">
-            <h2 class="section-title">🏆 Current Rankings</h2>
-            <div class="leaderboard"></div>
-            <button class="add-review-btn" onclick="openModal()">Add New Review</button>
-        </div>
-
-
-        <div id="blog-section" class="section">
-            <h2 class="section-title">📖 Scone Adventures</h2>
-            <div class="blog">
-            <div id="blog"></div>
+        <h1>The Ultimate NZ Cheese Scone Quest</h1>
+         <p>Discovering and ranking New Zealand's finest cheese scones with scientific precision</p>
+        <div class="social-links">
+            <a href="https://instagram.com/yourhandle" target="_blank" class="social-btn">📸 Follow on Instagram</a>
         </div>
     </div>
 
-    <!-- Modal for adding new reviews -->
-    <div id="reviewModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Add New Scone Review</h2>
-            <form id="reviewForm">
-                <div class="form-group">
-                    <label for="cafeName">Cafe Name:</label>
-                    <input type="text" id="cafeName" name="cafeName" required>
-                </div>
-                <div class="form-group">
-                    <label for="location">Location:</label>
-                    <input type="text" id="location" name="location" required>
-                </div>
-                <div class="form-group">
-                    <label for="website">Cafe Website (optional):</label>
-                    <input type="url" id="website" name="website">
-                </div>
-                <div class="form-group">
-                    <label for="score">Score (out of 10):</label>
-                    <input type="number" id="score" name="score" min="0" max="10" step="0.1" required>
-                </div>
-                <div class="form-group">
-                    <label for="review">Review:</label>
-                    <textarea id="review" name="review" rows="6" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Add Review</button>
-            </form>
-        </div>
+    <!-- FIXED (removed extra <) -->
+    <div id="leaderboard-section" class="section">
+      <h2 class="section-title">🏆 Current Rankings</h2>
+      <div class="leaderboard"></div>
+      <button class="add-review-btn" onclick="openModal()">Add New Review</button>
     </div>
 
-    <script src="/data/reviews.js?v=1"></script>
-    <script src="/js/app.js"></script>
+    <!-- FIXED (balanced divs) -->
+    <div id="blog-section" class="section">
+      <h2 class="section-title">📖 Scone Adventures</h2>
+      <div class="blog">
+        <div id="blog"></div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Add New Scone Review</h2>
+      <form id="reviewForm">
+        <div class="form-group">
+          <label for="cafeName">Cafe Name:</label>
+          <input type="text" id="cafeName" name="cafeName" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+          <label for="website">Cafe Website (optional):</label>
+          <input type="url" id="website" name="website">
+        </div>
+        <div class="form-group">
+          <label for="score">Score (out of 10):</label>
+          <input type="number" id="score" name="score" min="0" max="10" step="0.1" required>
+        </div>
+        <div class="form-group">
+          <label for="review">Review:</label>
+          <textarea id="review" name="review" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Add Review</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FIXED paths: relative instead of absolute -->
+  <script src="data/reviews.js?v=1"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
