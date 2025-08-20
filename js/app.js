@@ -29,7 +29,7 @@
 
   // ------- Leaderboard logic -------
   // strategy: "latest" (default), "best", or "average"
-  const LEADERBOARD_STRATEGY = "latest";
+  const LEADERBOARD_STRATEGY = "best";
 
   function computeLeaderboard(reviews, strategy = "latest") {
     // Group reviews by cafe
