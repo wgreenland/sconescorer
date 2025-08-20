@@ -427,4 +427,19 @@
                 font-size: 0.9rem;
             }
         }
+
+            .see-more-btn {
+              background: none;
+              border: none;
+              color: #7fb069;
+              font-weight: 600;
+              cursor: pointer;
+              padding: 0;
+              margin-top: 0.5rem;
+              display: inline-block;
+            }
+
+            .see-more-btn:hover {
+              text-decoration: underline;
+            }
     </style>

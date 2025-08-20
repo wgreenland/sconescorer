@@ -105,33 +105,61 @@
 
     const sorted = state.reviews
       .slice()
-      .sort((a, b) => new Date(b.date) - new Date(a.date));
+      .sort((a, b) => new Date(a.date) - new Date(b.date)); // chronological order
 
     sorted.forEach((r) => {
       const post = document.createElement("div");
       post.className = "blog-post";
-      const linksMarkup = (r.links && (r.links.website || r.links.instagram || r.links.facebook))
-        ? `
-          <div style="margin-top:0.75rem">
-            ${r.links.website ? `<a href="${r.links.website}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Website</a>` : ""}
-            ${r.links.instagram ? `<a href="${r.links.instagram}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Instagram</a>` : ""}
-            ${r.links.facebook ? `<a href="${r.links.facebook}" target="_blank" class="cafe-website">Facebook</a>` : ""}
-          </div>
-        `
-        : "";
+
+      const fullText = escapeHTML(r.review).replace(/\n/g, "<br>");
+      const previewLimit = 300;
+      const isLong = fullText.length > previewLimit;
+      const previewText = isLong ? fullText.slice(0, previewLimit) + "..." : fullText;
+
+      const linksMarkup =
+        r.links &&
+        (r.links.website || r.links.instagram || r.links.facebook)
+          ? `
+            <div style="margin-top:0.75rem">
+              ${r.links.website ? `<a href="${r.links.website}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Website</a>` : ""}
+              ${r.links.instagram ? `<a href="${r.links.instagram}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Instagram</a>` : ""}
+              ${r.links.facebook ? `<a href="${r.links.facebook}" target="_blank" class="cafe-website">Facebook</a>` : ""}
+            </div>
+          `
+          : "";
 
       post.innerHTML = `
         <div class="blog-date">${formatNZDate(r.date)}</div>
         <div class="blog-title">New Review: ${escapeHTML(r.cafe)} — ${escapeHTML(r.location)}</div>
         <div class="blog-content">
-          <p>${escapeHTML(r.review).replace(/\n/g, "<br>")}</p>
+          <p class="review-text">${previewText}</p>
+          ${
+            isLong
+              ? `<button class="see-more-btn">See more</button>`
+              : ""
+          }
           <p style="margin-top:0.75rem"><strong>Score:</strong> ${Number(r.score).toFixed(1)}/10</p>
           ${linksMarkup}
         </div>
       `;
+
       container.appendChild(post);
+
+      if (isLong) {
+        const btn = post.querySelector(".see-more-btn");
+        const textEl = post.querySelector(".review-text");
+        btn.addEventListener("click", () => {
+          if (btn.textContent === "See more") {
+            textEl.innerHTML = fullText;
+            btn.textContent = "See less";
+          } else {
+            textEl.innerHTML = previewText;
+            btn.textContent = "See more";
+          }
+        });
+      }
     });
-  }
+  } 
 
   // ------- Smooth scrolling for in-page links -------
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
