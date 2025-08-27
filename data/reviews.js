@@ -178,7 +178,7 @@ SIDENOTE: plenty of talking points from the recent Scone Scorer Summit. Stay tun
       facebook: ""
     },
     review: `Well, this was something a little bit different.
-    
+
 I must admit that I ordered this scone feeling a little down in the dumps after missing my usual return bus from Pak'nSave. As they say though, every cloud has a silver lining. In this passing shadow lay the opportunity to sample a new scone. The venue: Bakers Lane - a cafe renowned more for its sweets than its savoury options, but baking is baking, so I figured it would be hard to go far wrong.
 
 With three separate savoury varieties greeting the prospective consumer, the early signs were strong. Of course, this being my first time at Bakers Lane, I confidently ordered the straight-up cheese scone, making a mental note to return for the sun-dried tomato-infused alternative on my next visit. Toasted (not microwaved) and served with a generous heaping of butter (no small fee in this economy), this treat sure looked the part.
@@ -210,6 +210,25 @@ What's more… this scone had a secret easter egg - a thin layer of ricotta chee
 
 A strong 8.4/10.`,
     score: 8.4
-  }
-];
+  },
 
+];
+{
+    id: "2025-08-29-ferg",
+    date: "2025-08-29",
+    cafe: "Fergbaker",
+    location: "69 Beach Street, Queenstown, New Zealand 9300",
+    lat: -45.03217,
+    lng: 168.65683,
+    links: {
+      instagram: "https://www.instagram.com/fergbakerqueenstown/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `How times change!
+
+The highest-ranked scone of the 2022 Strapped Boy's Mission seems to have suffered an unfortunate fall from grace over the intervening three-year period. Perhaps we were a bit naive at the time, or simply under the spell of the Ferg Conglomerate. However, this scone was missing a number of key elements. For starters, and especially for Queenstown's most renowned baking institution, the dough was clearly stale. Yes, the flavours were subtle and pleasant, but for a 24/7 operation I really expected something fresher, not least since I passed through its doors at what should be prime scone consumption hours (mid-morning).
+
+Compared to the neighbouring Beach St Cafe (current leader on our scone leaderboard), this scone was also a little shy on cheese. From my experience, if you're not confident in your dough, then add-more-cheese is usually a decent insurance policy. Poor old Ferg seems stuck in No-Man's Land though. Of course, this critique comes from a place of love. And love brings high expectations! Yes, this scone was lacking in a few key departments. Was it unpleasant though? Definitely not. I'd therefore happily award a pass mark: 5.5/10. Mr and Mrs Ferg though, consider yourselves on notice.`,
+    score: 5.5
+  }
