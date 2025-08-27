@@ -4,6 +4,8 @@ window.REVIEWS = [
     id: "2025-07-31-kaipai",
     date: "2025-07-31",
     cafe: "Kai Pai Bakery",
+    lat: -44.7000,
+    lng: 169.1200,
     location: "17 Frederick Street, Wānaka 9305",
     links: {
       instagram: "https://www.instagram.com/kaipaipies/?hl=en",
@@ -33,6 +35,8 @@ Oh yeah, the walk was fun too. Bonus marks for the cheese and biscuits at the su
     date: "2025-08-02",
     cafe: "Marmolada Cafe",
     location: "43 Camp St, Queenstown, New Zealand 9300",
+    lat: -45.0302,
+    lng: 168.6614, 
     links: {
       instagram: "https://www.instagram.com/marmoladacafeqt/?hl=en",
       website: "",
@@ -63,6 +67,8 @@ Long story short, if you’re in Queenstown then Marmoloda is a no-brainer.`,
     date: "2025-08-12",
     cafe: "Beach Cafe",
     location: "85 Beach Street, Queenstown, New Zealand 9300",
+    lat: -45.0302,
+    lng: 168.6614,
     links: {
       instagram: "https://www.instagram.com/_beachstcafe/?hl=en",
       website: "",
@@ -80,6 +86,8 @@ Perfectly toasted to produce a thin crust, every bite of this goody unlocked a d
     date: "2025-08-18",
     cafe: "Meshino Cafe",
     location: "75 Rutland Street, Christchurch, New Zealand 8014",
+    lat: -43.5257,
+    lng: 172.6398,
     links: {
       instagram: "https://www.instagram.com/meshino_cafe/",
       website: "",
@@ -103,6 +111,8 @@ Chur bro!`,
     date: "2025-08-18",
     cafe: "The Bakery",
     location: "37 Shotover Street, Queenstown, New Zealand 9300",
+    lat: -45.0302,
+    lng: 168.6614,
     links: {
       instagram: "https://www.instagram.com/queenstownbakery/",
       website: "",
@@ -120,6 +130,8 @@ When I reflect upon the merits of the scone, cheerily delivered to my street-fac
     date: "2025-08-19",
     cafe: "Queenstown Cafe",
     location: "87 Gorge Road, Queenstown, New Zealand 9300",
+    lat: -45.0302,
+    lng: 168.6614,
     links: {
       instagram: "https://www.instagram.com/queenstowncafe/",
       website: "",
@@ -137,6 +149,8 @@ Tragically, however, this scone was unable to rise to the occasion. The texture 
     date: "2025-08-20",
     cafe: "Sandfly Cafe",
     location: "9 The Lane, Te Anau, New Zealand 9600",
+    lat: -45.4167,
+    lng: 167.7167,
     links: {
       instagram: "",
       website: "",
@@ -156,20 +170,23 @@ SIDENOTE: plenty of talking points from the recent Scone Scorer Summit. Stay tun
     date: "2025-08-27",
     cafe: "Bakers Lane",
     location: "19 Grant Road, Frankton, Queenstown 9300",
+    lat: -45.0302,
+    lng: 168.6614,
     links: {
       instagram: "https://www.instagram.com/explore/locations/110316482031333/bakers-lane-queenstown/",
       website: "",
       facebook: ""
     },
-    review: `Well, this was something a little bit different. 
+    review: `Here's the corrected version with "no small fee" kept as you had it:
 
-I must admit that I ordered this scone feeling a little down in the dumps after missing my usual return bus from Pak N Save. As they say though, every cloud has a silver lining. In this passing shadow lay the opportunity to sample a new scone. The venue; Bakers Lane - a cafe renowned more for its sweets than its savoury options, but baking is baking so I figured it would be hard to go far wrong.
+    Well, this was something a little bit different.
+I must admit that I ordered this scone feeling a little down in the dumps after missing my usual return bus from Pak'nSave. As they say though, every cloud has a silver lining. In this passing shadow lay the opportunity to sample a new scone. The venue: Bakers Lane - a cafe renowned more for its sweets than its savoury options, but baking is baking, so I figured it would be hard to go far wrong.
 
-With three separate savoury varieties greeting the prospective consumer, the early signs were strong. Of course, this being my first time at Bakers Lane, I confidently ordered the straight-up cheese scone, making a mental note to return for the sun-dried tomato infused alternative on my next visit. Toasted (not microwaved) and served with a generous heaping of butter (no small fee in this economy) this treat sure looked the part. 
+With three separate savoury varieties greeting the prospective consumer, the early signs were strong. Of course, this being my first time at Bakers Lane, I confidently ordered the straight-up cheese scone, making a mental note to return for the sun-dried tomato-infused alternative on my next visit. Toasted (not microwaved) and served with a generous heaping of butter (no small fee in this economy), this treat sure looked the part.
 
-On the tongue, it was somewhat reminiscent of campfire damper; crisp outer and almost creamy internal consistency. On reflection though, and through conversation with Macpac colleague and fellow cheese scone enthusiast James, the resemblance may have been made most apparent by my proclivity to add a fraction too much baking soda to my damper mixes. Nonetheless, I’d still 100% recommend Bakers Lane to friends. I’m still not convinced that baking soda creates a wholly unpleasant experience. Plus its basically like brushing your teeth without needing to pay for Colgates.
+On the tongue, it was somewhat reminiscent of campfire damper: crisp outer and almost creamy internal consistency. On reflection though, and through conversation with Macpac colleague and fellow cheese scone enthusiast James, the resemblance may have been made most apparent by my proclivity to add a fraction too much baking soda to my damper mixes. Nonetheless, I'd still 100% recommend Bakers Lane to friends. I'm still not convinced that baking soda creates a wholly unpleasant experience. Plus, it's basically like brushing your teeth without needing to pay for Colgate's.
 
-I appreciate that may sound like an outrageous take. I’m not saying other scone enthusiasts would reach the same conclusion. All I ask is that you approach it with an open mind. A middling 7.2 for me.`,
+I appreciate that may sound like an outrageous take. I'm not saying other scone enthusiasts would reach the same conclusion. All I ask is that you approach it with an open mind. A middling 7.2 for me.`,
     score: 7.2
   },
   {
@@ -177,18 +194,20 @@ I appreciate that may sound like an outrageous take. I’m not saying other scon
     date: "2025-08-28",
     cafe: "Vudu Cafe",
     location: "16 Rees St, Queenstown, New Zealand 9300",
+    lat: -45.0302,
+    lng: 168.6614,
     links: {
       instagram: "https://www.instagram.com/vudularder/",
       website: "",
       facebook: ""
     },
-    review: `Mid-week treat this one.
+    review: `Mid-week treat, this one.
 
-An awkward bus timetable gifted me a 30 minute window to explore town before work. For a moment I contemplated going on a walk around Queenstown Gardens, but with so much ground to cover on the cheese scone mission I couldn’t let this moment slide.
+An awkward bus timetable gifted me a 30-minute window to explore town before work. For a moment I contemplated going on a walk around Queenstown Gardens, but with so much ground to cover on the cheese scone mission, I couldn't let this moment slide.
 
-Vudu Cafe might be Queenstown’s premiere brunch destination. At least thats what I can tell from my vantage point behind the counter of neighbouring Macpac. With ample outdoor seating and voluptuous servings of eggs, I reckon you’d struggle to spend a day in Queenstown poorly just by jumping between Vudu and neighbouring Pogs. And what better way to line the stomach for an afternoon / evening of Guinness than with a cheese scone? Carby, crispy and girthy. It ticks all my boxes at least.
+Vudu Cafe might be Queenstown's premiere brunch destination. At least that's what I can tell from my vantage point behind the counter of neighbouring Macpac. With ample outdoor seating and voluptuous servings of eggs, I reckon you'd struggle to spend a day in Queenstown poorly just by jumping between Vudu and neighbouring Pogs. And what better way to line the stomach for an afternoon/evening of Guinness than with a cheese scone? Carby, crispy and girthy. It ticks all my boxes at least.
 
-Whats more… this scone had a secret easter egg - a thin layer of ricotta cheese through the middle of the upper crust. Full credit to the Vudu crew for this innovative approach. It certainly created an addition indulgent element for the consumer. Now I don’t necessarily believe that this method should displace the tried-and-true, but its great to see some dynamism in the industry. It also provides an excellent reason to return [SPOILER ALERT: this scone featured @ the Inaugural Scone Scorer Summit. More to come…]
+What's more… this scone had a secret easter egg - a thin layer of ricotta cheese through the middle of the upper crust. Full credit to the Vudu crew for this innovative approach. It certainly created an additional indulgent element for the consumer. Now I don't necessarily believe that this method should displace the tried-and-true, but it's great to see some dynamism in the industry. It also provides an excellent reason to return [SPOILER ALERT: this scone featured @ the Inaugural Scone Scorer Summit. More to come…]
 
 A strong 8.4/10.`,
     score: 8.4

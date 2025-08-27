@@ -216,7 +216,37 @@
     });
   }
 
+  // ------- Map Rendering -------
+  function renderMap() {
+    const mapContainer = document.getElementById("map");
+    if (!mapContainer) return;
+
+    // Initialise map
+    const map = L.map("map").setView([-41.2865, 174.7762], 5); // Center on NZ
+
+    // Tile layer
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors"
+    }).addTo(map);
+
+    // Loop through each review and place a marker
+    state.reviews.forEach(r => {
+      if (r.lat && r.lng) {
+        L.marker([r.lat, r.lng])
+          .addTo(map)
+          .bindPopup(
+            `<strong>${r.cafe}</strong><br>${r.location}<br>Score: ${r.score}/10`
+          );
+      }
+    });
+  }
+
+
   // ------- Initial render -------
   renderLeaderboard();
   renderBlog();
+  renderMap();
+
+
+
 })();
