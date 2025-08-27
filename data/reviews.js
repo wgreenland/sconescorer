@@ -142,7 +142,7 @@ Tragically, however, this scone was unable to rise to the occasion. The texture 
       website: "",
       facebook: "https://www.facebook.com/p/Sandfly-Cafe-100063619539706/"
     },
-    review: `Another town, another scone, another success story. These carbs were certainly well-earned. I’d arrived in Te Anau early on Friday morning with an ambitious agenda. Not just one, but two Great Walks; the Kepler and the Routeburn. The weather window certainly looked favourable, but tackling 100km by foot in Fiordland is never an easy task. Sure enough, my arrival coincided with Te Anau’s first snow of the season. The ever-trusty DOC workers indicated that the snow line had descended to just 500m. Given a significant proportion of the Kepler would be above 1100m, I decided it might be best to invest in a decent pair of gaiters and ice-spikes. The skies were nonetheless forecast to clear for the weekend, so I decided to set out early Saturday morning for the comfort of Luxmore Hut - one of the few permanently staffed huts in the DOC portfolio. This section of the walk was nothing short of magnificent, but with another 52km to cover back to town, I was hesitant about the idea of spending the next night at the notoriously frigid Iris Burn Hut. 
+    review: `Another town, another scone, another success story. These carbs were certainly well-earned. I’d arrived in Te Anau early on Friday morning with an ambitious agenda. Not just one, but two Great Walks; the Kepler and the Routeburn. The weather window certainly looked favourable, but tackling 100km by foot in Fiordland is never an easy task. Sure enough, my arrival coincided with Te Anau’s first snow of the season. The ever-trusty DOC workers indicated that the snow line had descended to just 500m. Given a significant proportion of the Kepler would be above 1100m, I decided it might be best to invest in a decent pair of gaiters and ice-spikes. The skies were nonetheless forecast to clear for the weekend, so I set out early Saturday morning for the comfort of Luxmore Hut - one of the few permanently staffed huts in the DOC portfolio. This section of the walk was nothing short of magnificent, but with another 52km to cover back to town, I was hesitant about the idea of spending the next night at the notoriously frigid Iris Burn Hut. 
 
 Time to call in the dog! Twelve hours of walking later - including 10km of alpine ridge line spanning marginal avalanche territory, and more than four hours through dense beech forest by head torch - I’d arrived back at Lakefront Backpackers. Being 9pm on a Sunday of course, I was left to wait till the morning to commence Operation Re-Carb.  
 
@@ -150,6 +150,48 @@ Sandfly Cafe, conveniently located just before the town’s optimal hitchhiking 
 
 SIDENOTE: plenty of talking points from the recent Scone Scorer Summit. Stay tuned for the details.`,
     score: 9.2
+  },
+  {
+    id: "2025-08-27-bakers",
+    date: "2025-08-27",
+    cafe: "Bakers Lane",
+    location: "19 Grant Road, Frankton, Queenstown 9300",
+    links: {
+      instagram: "https://www.instagram.com/explore/locations/110316482031333/bakers-lane-queenstown/",
+      website: "",
+      facebook: ""
+    },
+    review: `Well, this was something a little bit different. 
+
+I must admit that I ordered this scone feeling a little down in the dumps after missing my usual return bus from Pak N Save. As they say though, every cloud has a silver lining. In this passing shadow lay the opportunity to sample a new scone. The venue; Bakers Lane - a cafe renowned more for its sweets than its savoury options, but baking is baking so I figured it would be hard to go far wrong.
+
+With three separate savoury varieties greeting the prospective consumer, the early signs were strong. Of course, this being my first time at Bakers Lane, I confidently ordered the straight-up cheese scone, making a mental note to return for the sun-dried tomato infused alternative on my next visit. Toasted (not microwaved) and served with a generous heaping of butter (no small fee in this economy) this treat sure looked the part. 
+
+On the tongue, it was somewhat reminiscent of campfire damper; crisp outer and almost creamy internal consistency. On reflection though, and through conversation with Macpac colleague and fellow cheese scone enthusiast James, the resemblance may have been made most apparent by my proclivity to add a fraction too much baking soda to my damper mixes. Nonetheless, I’d still 100% recommend Bakers Lane to friends. I’m still not convinced that baking soda creates a wholly unpleasant experience. Plus its basically like brushing your teeth without needing to pay for Colgates.
+
+I appreciate that may sound like an outrageous take. I’m not saying other scone enthusiasts would reach the same conclusion. All I ask is that you approach it with an open mind. A middling 7.2 for me.`,
+    score: 7.2
+  },
+  {
+    id: "2025-08-28-vudu",
+    date: "2025-08-28",
+    cafe: "Vudu Cafe",
+    location: "16 Rees St, Queenstown, New Zealand 9300",
+    links: {
+      instagram: "https://www.instagram.com/vudularder/",
+      website: "",
+      facebook: ""
+    },
+    review: `Mid-week treat this one.
+
+An awkward bus timetable gifted me a 30 minute window to explore town before work. For a moment I contemplated going on a walk around Queenstown Gardens, but with so much ground to cover on the cheese scone mission I couldn’t let this moment slide.
+
+Vudu Cafe might be Queenstown’s premiere brunch destination. At least thats what I can tell from my vantage point behind the counter of neighbouring Macpac. With ample outdoor seating and voluptuous servings of eggs, I reckon you’d struggle to spend a day in Queenstown poorly just by jumping between Vudu and neighbouring Pogs. And what better way to line the stomach for an afternoon / evening of Guinness than with a cheese scone? Carby, crispy and girthy. It ticks all my boxes at least.
+
+Whats more… this scone had a secret easter egg - a thin layer of ricotta cheese through the middle of the upper crust. Full credit to the Vudu crew for this innovative approach. It certainly created an addition indulgent element for the consumer. Now I don’t necessarily believe that this method should displace the tried-and-true, but its great to see some dynamism in the industry. It also provides an excellent reason to return [SPOILER ALERT: this scone featured @ the Inaugural Scone Scorer Summit. More to come…]
+
+A strong 8.4/10.`,
+    score: 8.4
   }
 ];
 
