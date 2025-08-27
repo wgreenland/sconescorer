@@ -211,8 +211,6 @@ What's more… this scone had a secret easter egg - a thin layer of ricotta chee
 A strong 8.4/10.`,
     score: 8.4
   },
-
-];
 {
     id: "2025-08-29-ferg",
     date: "2025-08-29",
@@ -232,3 +230,5 @@ The highest-ranked scone of the 2022 Strapped Boy's Mission seems to have suffer
 Compared to the neighbouring Beach St Cafe (current leader on our scone leaderboard), this scone was also a little shy on cheese. From my experience, if you're not confident in your dough, then add-more-cheese is usually a decent insurance policy. Poor old Ferg seems stuck in No-Man's Land though. Of course, this critique comes from a place of love. And love brings high expectations! Yes, this scone was lacking in a few key departments. Was it unpleasant though? Definitely not. I'd therefore happily award a pass mark: 5.5/10. Mr and Mrs Ferg though, consider yourselves on notice.`,
     score: 5.5
   }
+];
+
