@@ -239,6 +239,12 @@
           );
       }
     });
+
+    // Fix for blank/blue map issue
+    setTimeout(() => {
+      map.invalidateSize();
+    }, 100);
+    
   }
 
 
