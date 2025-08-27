@@ -442,4 +442,11 @@
             .see-more-btn:hover {
               text-decoration: underline;
             }
+
+        #map {
+              height: 500px;
+              width: 100%;
+        }
+
+
     </style>
