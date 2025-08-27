@@ -105,7 +105,7 @@
 
     const sorted = state.reviews
       .slice()
-      .sort((a, b) => new Date(a.date) - new Date(b.date)); // chronological order
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
 
     sorted.forEach((r) => {
       const post = document.createElement("div");
