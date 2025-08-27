@@ -177,9 +177,8 @@ SIDENOTE: plenty of talking points from the recent Scone Scorer Summit. Stay tun
       website: "",
       facebook: ""
     },
-    review: `Here's the corrected version with "no small fee" kept as you had it:
-
-    Well, this was something a little bit different.
+    review: `Well, this was something a little bit different.
+    
 I must admit that I ordered this scone feeling a little down in the dumps after missing my usual return bus from Pak'nSave. As they say though, every cloud has a silver lining. In this passing shadow lay the opportunity to sample a new scone. The venue: Bakers Lane - a cafe renowned more for its sweets than its savoury options, but baking is baking, so I figured it would be hard to go far wrong.
 
 With three separate savoury varieties greeting the prospective consumer, the early signs were strong. Of course, this being my first time at Bakers Lane, I confidently ordered the straight-up cheese scone, making a mental note to return for the sun-dried tomato-infused alternative on my next visit. Toasted (not microwaved) and served with a generous heaping of butter (no small fee in this economy), this treat sure looked the part.
