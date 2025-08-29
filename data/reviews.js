@@ -229,6 +229,48 @@ The highest-ranked scone of the 2022 Strapped Boy's Mission seems to have suffer
 
 Compared to the neighbouring Beach St Cafe (current leader on our scone leaderboard), this scone was also a little shy on cheese. From my experience, if you're not confident in your dough, then add-more-cheese is usually a decent insurance policy. Poor old Ferg seems stuck in No-Man's Land though. Of course, this critique comes from a place of love. And love brings high expectations! Yes, this scone was lacking in a few key departments. Was it unpleasant though? Definitely not. I'd therefore happily award a pass mark: 5.5/10. Mr and Mrs Ferg though, consider yourselves on notice.`,
     score: 5.5
-  }
+  },
+{
+    id: "2025-08-30-colombus",
+    date: "2025-08-30",
+    cafe: "Colombus Coffee",
+    location: "46 Brookes Road, Frankton, Queenstown 9300",
+    lat: -45.01029,
+    lng: 168.75030,
+    links: {
+      instagram: "https://www.instagram.com/columbus_coffee_queenstown_/",
+      website: "",
+      facebook: ""
+    },
+    review: `Another Pak N' Save mission, another scone scoring opportunity.
+
+On a rather soggy Saturday, the discount supermarket warehouse's immediate neighbour Columbus Coffee made for an obvious pit-stop. Not usually one for a cafe chain (especially those attached to a hardware store,) I was pleasantly surprised by the array of decent looking cabinet food. Multiple savoury scone varieties normally indicate that the vendor takes their craft seriously. Of course, this heuristic does not apply equally as well to chains. After all, the decision to stock a sun-dried tomato variant alongside the traditional cheese-only affair was probably made by some middle manager sitting in Auckland. The baker, most likely an external contractor, probably couldn't care less. We're a glass half-full kinda page though, so I'll give them the benefit of the doubt.
+
+Much like the Mitre 10 mother store, this scone tried to do everything. Chunky, with generous hunks of cheese fighting for your tastebuds' attention against diced onion, wilted spinach and bits of capsicum, this scone felt more like a meal than a snack. Yet I have to say it was still a good experience. Maybe it was the people-watching: families bribing their young kids with sweet treats to get them to the hardware store, older couples enjoying a cheap weekend brunch and tradies stopping for a pie to get them through a dreaded Saturday shift. Columbus Coffee attracts an authentic cross-section of Central Otago. For a temporary resident of arguably New Zealand's most cosmopolitan town, this was a breath of fresh air.
+
+Overall, while the Columbus Cheese Scone does not reach the level of IKEA Meatballs, I'd still say it's worth a dabble: 6.6/10. I'll be leaving with memories of its customers, rather than the recipe.`,
+    score: 6.6
+  },
+  {
+    id: "2025-08-31-kahwah",
+    date: "2025-08-31",
+    cafe: "Kahwah Cafe",
+    location: "8/50 Buckingham Street, Arrowtown 9302",
+    lat: -44.936829,
+    lng: 168.83262,
+    links: {
+      instagram: "https://www.instagram.com/kahwaharrowtown/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `New concept unlocked: tomato relish on a scone!
+
+Full credit to Kahwah Cafe on a couple of fronts today. First, for redeeming what was almost an ill-fated cheese scone tour. With my calendar empty ahead of an afternoon shift, I decided to explore the Arthurs Point-Arrowtown trail (17km-ish) on foot with the intention of bagging another scone at the terminus. A cool, crisp winter's morning combined with typically stunning Central Otago scenery and the impressive Millbrook resort to produce a truly joyous jog. A definite 10/10. However, arriving at my destination I was confronted by the troubling reality that Arrowtown Bakery was sold out of cheese scones… With the clock ticking before the last bus back to work, I unsuccessfully stumbled through two other cafes, before arriving somewhat breathlessly at the bougie-looking Kahwah Cafe to the welcome sight of a scone-full cabinet.
+
+Second, the friendly barista took the as-yet unprecedented step of including a small tub of homemade tomato relish in my takeaway box. My interest piqued, I resisted the temptation to dig in until I arrived home. I then devoured my toasted, buttered and relished scone alongside a characteristically bitter Mocona blend. The verdict: splendid. Purists may object to the additive concept of relish. On one level, I sympathise with this perspective. At what point is a cheese scone more than just a scone? Could relish be used to mask underlying deficiencies? Is a condiment really worth the extra $2? While these prickly questions may threaten to divide the scone community, I think it's important to not lose sight of what is most important - the experience. Approached pragmatically, slapping some relish on this bad-boy improved my morning, its tangy spices complementing the freshness of the dough.
+
+As I spoke about in our Vudu Cafe review, innovation is often lacking in the cheese scone industry. When it pays off, it should be celebrated. At the same time, I do think that Kahwah Cafe has drifted a bit beyond the realm of the cheese scone. If they dialled up the gooey-factor I'd be more inclined to award a higher score. Nonetheless, a very solid 8.1/10 in my books. Judging by the other options in Arrowtown (or the lack thereof), I'd suggest stopping by to make your own mind up if in town.`,
+    score: 8.1
+  },
 ];
 
