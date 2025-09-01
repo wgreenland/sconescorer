@@ -272,5 +272,51 @@ Second, the friendly barista took the as-yet unprecedented step of including a s
 As I spoke about in our Vudu Cafe review, innovation is often lacking in the cheese scone industry. When it pays off, it should be celebrated. At the same time, I do think that Kahwah Cafe has drifted a bit beyond the realm of the cheese scone. If they dialled up the gooey-factor I'd be more inclined to award a higher score. Nonetheless, a very solid 8.1/10 in my books. Judging by the other options in Arrowtown (or the lack thereof), I'd suggest stopping by to make your own mind up if in town.`,
     score: 8.1
   },
+  {
+    id: "2025-09-01-clyde",
+    date: "2025-09-01",
+    cafe: "The Post Office",
+    location: "4 Blyth Street, Clyde 9330",
+    lat: -45.18912,
+    lng: 169.31743,
+    links: {
+      instagram: "https://www.instagram.com/explore/locations/114513329924608/post-office-cafe-bar-clyde/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `Road trippppppppp
+
+With the only South Island All Blacks fixture to be played at Forsyth Barr in Dunedin against the Frenchies, I'd made sure to secure tickets (and time off work) well in advance. Borrowing a vehicle off my good friend Ned, I scooped up the cheese-scone-curious Ellie from work (Coronet Peak) and together we set off for the Otago capital. Of course, one of the greatest things about a road trip is the chance to explore new scone opportunities. Assessing the route ahead, we identified the once-bustling gold mining town of Clyde as a convenient first stop. Spoilt for choice on the cafe front, we selected The Post Office, in part because of its thick sandstone exterior, but also because it was the first cafe we passed.
+
+The early signs were good. A roaring fireplace warmed a jovial crowd. In a town numbering just over a thousand, I figured many were embarking on a similar journey to ourselves. Or perhaps they had their own Central Otago objectives. Either way, the mood was infectious. We soon found ourselves faced with a coffee, a hot choccie, and a rustic scone. Concerning the latter, and as I have come to expect with pastries of this ilk, the texture was a little uneven. This is not to say I found this aspect disappointing. With every bite generating slight nuances in mouth-feel, rustic scones have the ability to transport consumers into the baker's process. Scone-scoring is really just a metaphor for life, and as in the biggest of pictures, it is through imperfections that we create character.
+
+What I did find slightly underwhelming, however, was the subdued cheesiness. Part of the joy of a rustic scone is the pleasure of finding an unapologetic chunk of gooey cheese. The Post Office iteration unfortunately did not produce any of these magic moments. That said, I was still delighted with the pit-stop. The rating: 6.8/10. Time now for a Will Jordan hat-trick.
+
+ASIDE: Met two Clyde locals on the chairlift today - both expressed pride in The Post Office and its cheese scone. Big ups for culture.`,
+    score: 6.8
+  },
+  {
+    id: "2025-09-02",
+    date: "2025-09-31",
+    cafe: "Good Earth Cafe",
+    location: "765 Cumberland Street, Dunedin North, Dunedin 9016",
+    lat: -45.86294,
+    lng: 170.51285,
+    links: {
+      instagram: "https://www.instagram.com/goodearthcafe_dunedin/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `Woooweee!
+
+A questionable performance from the ABs in their season-opener last night. Job done nonetheless. In truth, the tight scoreline was more a function of an overly-enthusiastic TMO than a strong French performance. Fully expecting a blowout in the second fixture up in Welly.
+
+Anywayyyyss, onto scones. After a few more pints than I have grown accustomed to the previous evening, I had developed an acute hankering for a coffee and scone. After discussing a few potential alternatives in the immediate vicinity of Dunedin, we decided to return to a cafe we had passed on the way into the city the previous evening: Good Earth Cafe.
+
+This venue would not have been out of place in Sydney. With a menu full of wholesome ingredients and large, floor-to-ceiling windows exposing customers to the dim warmth of the early morning rays, I couldn't picture a better spot to nurse a battered soul. While tempted to dabble in an eggs benny, I knew a new destination demanded a new scone. This version took things right down the middle. Not too much cheese, yet at the same time also not enough. Warm, but not crispy. Perhaps this dithering review is more a function of head noise than of sound judgement. However, without any distinguishing features beyond its setting, I can't award it more than a 7.2/10.
+
+ASIDE: I was too scattered to take photographic evidence of this one. Please enjoy this video of the fastest known barefoot ascent of the world's steepest street instead.`,
+    score: 7.2
+  }
 ];
 
