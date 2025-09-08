@@ -296,7 +296,7 @@ ASIDE: Met two Clyde locals on the chairlift today - both expressed pride in The
     score: 6.8
   },
   {
-    id: "2025-09-02",
+    id: "2025-09-02-dunedin",
     date: "2025-09-31",
     cafe: "Good Earth Cafe",
     location: "765 Cumberland Street, Dunedin North, Dunedin 9016",
@@ -317,6 +317,84 @@ This venue would not have been out of place in Sydney. With a menu full of whole
 
 ASIDE: I was too scattered to take photographic evidence of this one. Please enjoy this video of the fastest known barefoot ascent of the world's steepest street instead.`,
     score: 7.2
+  },
+  {
+    id: "2025-09-03-coronet",
+    date: "2025-09-03",
+    cafe: "Coronet Peak",
+    location: "Queenstown 9371",
+    lat: -44.92376,
+    lng: 168.73592,
+    links: {
+      instagram: "",
+      website: "",
+      facebook: ""
+    },
+    review: `Uggggh.
+
+Before I launch into a thoroughly deserved tirade, I should say that this scone actually had an okay flavour. Unfortunately, the texture tasted as though it had been baked last season and left beneath the snow for 12 months to gestate. 
+
+That said, I’ll forever be amazed by modern man’s ability to consume baked goods, big breakfasts, burgers, beers and any other assortment of fast food above the snow line. Logistical nightmare I’m sure. Maybe just bring your own scone from town though: 3.6/10.`,
+    score: 3.6
+  },
+  {
+    id: "2025-09-01-cocoa",
+    date: "2025-09-01",
+    cafe: "Cocoa Black",
+    location: "Shop 38, Merivale Mall, 189 Papanui Road, Christchurch 8014",
+    lat: -43.51239,
+    lng: 172.62060,
+    links: {
+      instagram: "https://www.instagram.com/cocoablackcafe/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `Stop the count!
+
+This is it. Cocoa Black have done it. Their self-proclaimed ‘famous cheese scone’ has taken out Sconescorer’s first 10/10! From start to finish this scone was a culinary delight. A perfectly crisped outer crust enveloped an almost gooey internal texture. Yet getting the layering right is only one piece of the puzzle. It was the flavour which truly carried this baked goodie. A slight hint of cayenne pepper worked in tandem with a deep cheesiness to overwhelm one’s tastebuds. If you are anywhere in the vicinity of Cocoa Black when in Christchurch, make sure you get yourself there for a scone or several: 10/10. 
+
+The only downside to this scone is that my good friend Issy didn’t order one for herself as well. That said, her chicken and avocado wrap did look rather wholesome.`,
+    score: 10.0
+  },
+  {
+    id: "2025-09-04-richmond",
+    date: "2025-09-04",
+    cafe: "Zink Cafe Richmond",
+    location: "2 Champion Road, Richmond 7020",
+    lat: -41.33313,
+    lng: 173.20242,
+    links: {
+      instagram: "https://www.instagram.com/zinkltd/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `Still reeling from my otherworldly encounter at Cocoa Black in Christchurch, I intercepted the inbound parentals + uncle and aunty to begin our journey northward for the patriarch’s 90th. Out of respect for Scone Scorer’s first 10/10, I opted not to consume another cheese scone on the road trip up. Instead, I patiently awaited the dawn of a new day. Shoutout here to my father for delivering this one. 
+
+Faced with a dearth of options early on a Friday morning, Zink Cafe (discreetly attached to the local BBQ store) hardly presents itself as a beacon for scone enthusiasts. Nonetheless, I was pleasantly surprised by its attempt at placating the hungry masses. The texture of their scone was dense without being chewy, and charmingly pockmarked with tiny chunks of cheese to heighten the consumer’s anticipatory senses. On the flip side, their apparent insecurity as purveyors of the national baked good manifested itself in an unfortunate over-reliance on the cayenne pepper. Personally, I don’t mind a bit of spice in my dough. However, I feel obligated to warn those in the audience who consider themselves more averse. 
+
+Does having a scone delivered directly to your couch make it taste better? Quite possibly. Everyone deserves such indulgence from time to time though. So I’ll play on with the rating: 6.3/10. A solid option if you’re local, but don’t book flights.`,
+    score: 6.3
+  },
+  {
+    id: "2025-09-05-suter",
+    date: "2025-09-05",
+    cafe: "The Suter Cafe",
+    location: "208 Bridge Street, Nelson 7010, New Zealand",
+    lat: -41.27284,
+    lng: 173.28985,
+    links: {
+      instagram: "https://www.instagram.com/sutergallery/?hl=en",
+      website: "",
+      facebook: ""
+    },
+    review: `Every serious food critic faces the same critical question early in their amateur career. It arises when a venue they love fails to live up to expectations. The choice is then one between integrity and loyalty. Which path the author takes is very much a sliding doors moment; the fulcrum on which the legitimacy of all their following work balances.
+
+In my case, it is The Suter Cafe which has thrust this moment upon me. To preface what I am about to say, nothing in this review is to the discredit of the gallery or the cafe itself. Each time I have the privilege of visiting Nelson I - along with my grandparents - make the time to pass through their doors. The artwork is always thoughtful, showcasing the very best talent the Tasman region has to offer. The cafe's floor-to-ceiling windows open out onto the adjoining pond and nature walk. I've even had delicious cabinet food from the cafe before. In fact, I recall having enjoyed the cheese scone here on previous occasions.
+
+Unfortunately though, something has changed in this department since my last visit. This time around, I even had the frightening doubt about whether this would even qualify as a scone? I mean, just look at the photographic evidence. I'd say it more closely resembles a Scotch Finger. Not wanting to judge a book by its cover, I nonetheless forged on with high hopes.
+
+The dense dough reminded me of my own failed attempts at the savoury delicacy. When I was 3. Sorry Suter, but I cannot in good conscience recommend you on the basis of your cheese scone. The ambience? Sure. The gallery? Definitely. The blueberry and dark chocolate slice (grandma's favourite)? Absolutely. But the scone, alas, I cannot: 2.4/10`,
+    score: 2.4
   }
 ];
 
