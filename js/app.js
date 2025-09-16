@@ -4,11 +4,13 @@
   // ------- Utilities -------
   const NZ_DATE_FORMAT = { day: "numeric", month: "long", year: "numeric" };
 
+  // Format dates to NZ style (e.g. 16 September 2025)
   function formatNZDate(iso) {
     const d = iso ? new Date(iso) : new Date();
     return d.toLocaleDateString("en-NZ", NZ_DATE_FORMAT);
   }
 
+  // Escape HTML to avoid unsafe characters (prevents breaking HTML output)
   function escapeHTML(str = "") {
     return str
       .replaceAll("&", "&amp;")
@@ -18,22 +20,26 @@
       .replaceAll("'", "&#039;");
   }
 
+  // Pick best available link: prefer website > instagram > facebook
   function preferredLink(links = {}) {
     return links.website || links.instagram || links.facebook || "";
   }
 
   // ------- Data -------
   const state = {
+    // Store all reviews (pulled in from reviews.js)
     reviews: Array.isArray(window.REVIEWS) ? [...window.REVIEWS] : []
   };
 
   // ------- Leaderboard logic -------
-  // strategy: "latest" (default), "best", or "average"
+  // You can change this to "latest", "best", or "average"
   const LEADERBOARD_STRATEGY = "best";
 
+  // Compute leaderboard depending on chosen strategy
   function computeLeaderboard(reviews, strategy = "latest") {
-    // Group reviews by cafe
     const map = new Map();
+
+    // Group reviews by cafe name
     for (const r of reviews) {
       const key = r.cafe.trim();
       if (!map.has(key)) map.set(key, []);
@@ -41,43 +47,59 @@
     }
 
     const rows = [];
+
+    // For each cafe, pick which review/score to show
     for (const [cafe, arr] of map.entries()) {
       let chosen;
+
       if (strategy === "best") {
+        // Use highest scoring review
         chosen = arr.slice().sort((a, b) => b.score - a.score)[0];
       } else if (strategy === "average") {
+        // Use average score, but show details from most recent review
         const avg =
           arr.reduce((sum, x) => sum + Number(x.score || 0), 0) / arr.length;
-        // Use most recent review for meta (location/link), but show avg score
-        const recent = arr.slice().sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+        const recent = arr
+          .slice()
+          .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
         chosen = { ...recent, score: avg };
       } else {
-        // "latest"
-        chosen = arr.slice().sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+        // Default: use most recent review
+        chosen = arr
+          .slice()
+          .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
       }
 
+      // Push a “row” for the leaderboard
       rows.push({
         cafe,
         location: chosen.location || "",
         link: preferredLink(chosen.links || {}),
         score: Number(chosen.score || 0),
-        count: arr.length
+        count: arr.length // how many reviews that cafe has
       });
     }
 
+    // Sort cafes by score, highest first
     rows.sort((a, b) => b.score - a.score);
     return rows;
   }
 
   // ------- Rendering: Leaderboard -------
-  function renderLeaderboard() {
+  function renderLeaderboard(limit = 5) {
+    // Find leaderboard container in HTML
     const container = document.querySelector(".leaderboard");
     if (!container) return;
-    container.innerHTML = "";
+    container.innerHTML = ""; // clear existing content
 
+    // Get sorted leaderboard
     const rows = computeLeaderboard(state.reviews, LEADERBOARD_STRATEGY);
 
-    rows.forEach((row, i) => {
+    // Apply limit (top N rows) unless limit=null (then show all)
+    const rowsToShow = limit ? rows.slice(0, limit) : rows;
+
+    // Render each row
+    rowsToShow.forEach((row, i) => {
       const item = document.createElement("div");
       item.className = "leaderboard-item";
       item.innerHTML = `
@@ -95,6 +117,36 @@
       `;
       container.appendChild(item);
     });
+
+    // Show/hide toggle button if needed
+    const toggleBtn = document.getElementById("toggleLeaderboard");
+    if (toggleBtn) {
+      if (rows.length <= 5) {
+        toggleBtn.style.display = "none"; // hide button if <=5 cafes
+      } else {
+        toggleBtn.style.display = "inline-block"; // show button if >5
+      }
+    }
+  }
+
+  // Track toggle state: false = only top 5, true = all
+  let showingAll = false;
+
+  // Attach button handler
+  const toggleBtn = document.getElementById("toggleLeaderboard");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      showingAll = !showingAll; // flip state
+      renderLeaderboard(showingAll ? null : 5); // re-render list
+      toggleBtn.textContent = showingAll ? "Show Less" : "Show More"; // update label
+      if (!showingAll) {
+        // Optional: scroll back to top of leaderboard when collapsing
+        document.querySelector(".leaderboard").scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
   }
 
   // ------- Rendering: Blog -------
@@ -103,6 +155,7 @@
     if (!container) return;
     container.innerHTML = "";
 
+    // Sort reviews newest-first
     const sorted = state.reviews
       .slice()
       .sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -112,25 +165,41 @@
       post.className = "blog-post";
 
       const fullText = escapeHTML(r.review).replace(/\n/g, "<br>");
-      const previewLimit = 300;
+      const previewLimit = 300; // characters before cutting off
       const isLong = fullText.length > previewLimit;
       const previewText = isLong ? fullText.slice(0, previewLimit) + "..." : fullText;
 
+      // Build link buttons if they exist
       const linksMarkup =
         r.links &&
         (r.links.website || r.links.instagram || r.links.facebook)
           ? `
             <div style="margin-top:0.75rem">
-              ${r.links.website ? `<a href="${r.links.website}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Website</a>` : ""}
-              ${r.links.instagram ? `<a href="${r.links.instagram}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Instagram</a>` : ""}
-              ${r.links.facebook ? `<a href="${r.links.facebook}" target="_blank" class="cafe-website">Facebook</a>` : ""}
+              ${
+                r.links.website
+                  ? `<a href="${r.links.website}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Website</a>`
+                  : ""
+              }
+              ${
+                r.links.instagram
+                  ? `<a href="${r.links.instagram}" target="_blank" class="cafe-website" style="margin-right:0.75rem">Instagram</a>`
+                  : ""
+              }
+              ${
+                r.links.facebook
+                  ? `<a href="${r.links.facebook}" target="_blank" class="cafe-website">Facebook</a>`
+                  : ""
+              }
             </div>
           `
           : "";
 
+      // Build blog post HTML
       post.innerHTML = `
         <div class="blog-date">${formatNZDate(r.date)}</div>
-        <div class="blog-title">New Review: ${escapeHTML(r.cafe)} — ${escapeHTML(r.location)}</div>
+        <div class="blog-title">New Review: ${escapeHTML(r.cafe)} — ${escapeHTML(
+        r.location
+      )}</div>
         <div class="blog-content">
           <p class="review-text">${previewText}</p>
           ${
@@ -138,13 +207,16 @@
               ? `<button class="see-more-btn">See more</button>`
               : ""
           }
-          <p style="margin-top:0.75rem"><strong>Score:</strong> ${Number(r.score).toFixed(1)}/10</p>
+          <p style="margin-top:0.75rem"><strong>Score:</strong> ${Number(
+            r.score
+          ).toFixed(1)}/10</p>
           ${linksMarkup}
         </div>
       `;
 
       container.appendChild(post);
 
+      // Add "See more / See less" toggle for long reviews
       if (isLong) {
         const btn = post.querySelector(".see-more-btn");
         const textEl = post.querySelector(".review-text");
@@ -159,7 +231,7 @@
         });
       }
     });
-  } 
+  }
 
   // ------- Smooth scrolling for in-page links -------
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
@@ -192,6 +264,7 @@
     if (ev.target === m) window.closeModal();
   });
 
+  // Handle "Add Review" form submission
   const form = document.getElementById("reviewForm");
   if (form) {
     form.addEventListener("submit", (e) => {
@@ -208,11 +281,15 @@
         review: fd.get("review") || "",
         score: Number(fd.get("score"))
       };
+      // Add review to state
       state.reviews.push(newReview);
+      // Re-render
       renderLeaderboard();
       renderBlog();
       window.closeModal();
-      alert("Review added locally (preview). To make it permanent, add it to /data/reviews.js and push to GitHub.");
+      alert(
+        "Review added locally (preview). To make it permanent, add it to /data/reviews.js and push to GitHub."
+      );
     });
   }
 
@@ -221,16 +298,16 @@
     const mapContainer = document.getElementById("map");
     if (!mapContainer) return;
 
-    // Initialise map
-    const map = L.map("map").setView([-41.2865, 174.7762], 5); // Center on NZ
+    // Create Leaflet map centered on NZ
+    const map = L.map("map").setView([-41.2865, 174.7762], 5);
 
-    // Tile layer
+    // Add OpenStreetMap tile layer
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; OpenStreetMap contributors"
     }).addTo(map);
 
-    // Loop through each review and place a marker
-    state.reviews.forEach(r => {
+    // Add markers for each review
+    state.reviews.forEach((r) => {
       if (r.lat && r.lng) {
         L.marker([r.lat, r.lng])
           .addTo(map)
@@ -240,19 +317,15 @@
       }
     });
 
-    // Fix for blank/blue map issue
+    // Fix display bug when map first loads
     setTimeout(() => {
       map.invalidateSize();
     }, 100);
-    
   }
 
-
   // ------- Initial render -------
-  renderLeaderboard();
-  renderBlog();
-  renderMap();
-
-
-
+  renderLeaderboard(5); // show only top 5 on first load
+  renderBlog();         // show blog posts
+  renderMap();          // show map
 })();
+
